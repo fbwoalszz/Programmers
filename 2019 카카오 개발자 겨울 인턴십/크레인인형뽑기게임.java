@@ -29,7 +29,7 @@ class Solution {
     }
     
     private boolean isDollPopped(Stack<Integer> stack, int doll){
-        if(!stack.isEmpty() && (stack.peek() == doll)){
+        if(!stack.isEmpty() && (stack.peek() == doll)){	// peek() : 제일 상단에 있는거 반환만 함. 제거하진 않음. pop()이 반환 후 제거.
             stack.pop();
             return true;
         }
